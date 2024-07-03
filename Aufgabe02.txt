@@ -1,0 +1,9 @@
+Aufgabe 2: UDP
+Wenn die drei Klassen aus Aufgabe 1 unterschiedliche Programme sind, die per UDP kommunizieren, 
+müssen wir folgende Punkte beachten:
+
+- Verbindungslosigkeit von UDP: Da UDP verbindungslos ist, müssen die Anwendungen tolerant gegenüber Datenverlust sein, 
+da UDP keine Garantie für die Reihenfolge oder die Integrität der Daten bietet.
+
+- Fehlkommunikation vermeiden: Verwenden von einheitlichen Formaten für die Kommunikation, um sicherzustellen, 
+dass alle beteiligten Programme die Nachrichten korrekt interpretieren. Das könnte beispielsweise JSON sein, das sowohl Menschen als auch Maschinen leicht verstehen können.

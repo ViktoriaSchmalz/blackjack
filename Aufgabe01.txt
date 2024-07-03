@@ -1,0 +1,40 @@
+Aufgabe 1: Blackjack:
+
+Croupier
+- Erbt von Spieler: Ähnliche Funktionen ohne eigenen Einsatz
+- Kartenverwaltung:
+  - Erstellen der Karten: Ränge (2-10, Bube, Dame, König, Ass), Typen (Pik, Kreuz, Herz, Karo)
+  - Klasse Karte: rang, typ
+  - Set hand mit Karten
+  - Set decks mit 1-8 Kartendecks
+- Kartenausgabe: Methode zur Verteilung von Kartenobjekten
+- Gewinnberechnung: Methode zur Berechnung der Spielergewinne
+  - Boolean für Geldgewinn
+  - Variable zur Speicherung des Geldbetrags
+  - Methode zur Gewinnberechnung und Boolean-Status
+- Spielerausschluss: Methode zur Berechnung einer "gewinnanzahl"-Variable und Ausschluss bei Überschreiten eines Schwellenwerts
+- Statistikanfrage beim Kartenzähler: Methode zur Anforderung von Statistiken
+
+Spieler
+- Startkapital: Variable Startkapital
+- Handkarten: Set hand mit Karten
+- Spielaktionen (als methoden):
+  - Hit: Zusätzliche Karte anfordern, spezielle Regeln für Black Jack
+  - Stand: Bei aktueller Hand bleiben
+  - Split: Hand teilen, Regeln für verschiedene Kartenkombinationen
+  - Double Down: Einsatz verdoppeln, eine weitere Karte erhalten
+  - Surrender: Aufgeben, Hälfte des Einsatzes verlieren
+- Wetteinsatz: muss einen Wetteinsatz an den Croupier geben: Methode Variable Wetteinsatz weitergeben
+- Gewinnausschüttung: Variable Geld, Methode zur Hinzufügung des Gewinns
+- Einsatzberechnung: Informationen vom Kartenzähler anfragen
+
+Kartenzähler
+- Anfragen beim Croupier (Methode):
+  - Anzahl der Kartensets
+  - Ausgegebene Karten
+- Aktionenberechnung: Methode zur Berechnung der optimalen Aktion für den Spieler
+- Statistikführung:
+  - Variable Anzahl Gewinn
+  - Variable für Blackjacks
+  - Set verwendete Karten
+- Statistikübermittlung: Methode zur Übermittlung der Statistik an Spieler oder Croupier
