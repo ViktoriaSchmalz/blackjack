@@ -1,0 +1,6 @@
+Aufgabe 4:
+Algorithmus:
+sucht sich die billigste Route aus und merkt sich die anderen. Sucht sich die billigste nächtse Route oder wählt die vorherige zweit Biligste.
+
+Unterschiede zu Link-State-Verfahren:
+Link-State: Jeder Router kennt die gesamte Netzwerktopologie und erstellt eine globale Sicht. Es erfordert mehr Rechenleistung und Speicher, bietet jedoch genauere Informationen.
