@@ -1,0 +1,16 @@
+Aufgabe 1:
+
+a) 
+Sliding-Window-Protokoll: ist ein Mechanismus zur Steuerung des Datenflusses in TCP/IP-Netzwerkprotokollen. 
+Es ermöglicht das Senden mehrerer Datenpakete hintereinander, ohne auf Bestätigungen zu warten, jedoch nur bis zu einer bestimmten Grenze. Danach muss der Sender auf eine Bestätigung warten, bevor er weitere Pakete senden kann. 
+
+TCP Tahoe: ist ein altes Staukontrollverfahren, das zur Vermeidung und Auflösung von Netzwerküberlastungen entwickelt wurde. 
+Es verwendet einen Algorithmus, bei dem mit einen kleinen "Window" (cwnd) begonnen wird, welches exponentiell erhöht wird, bis ein Datenverlust auftritt. Bei Überlastung wird die Fenstergröße exponentiell reduziert. 
+
+TCP Reno: TCP Reno baut auf TCP Tahoe auf und verbessert die Handhabung von Paketverlusten durch die Einführung eines Mechanismus, welcher nach einer schnellen Wiederholung wird das "Window" (cwnd) halbiert und dann linear erhöht.
+Dies verhindert eine starke Reduktion der Übertragungsrate bei einzelnen Verlusten.
+
+TCP Vegas: ist ein alternatives Staukontrollverfahren, das die Fenstergröße dynamisch anpasst, ohne auf exponentielle Reduktion zurückzugreifen. 
+Ziel: Minimierung der Wartezeit (Latenz), Vermeidung von Netzwerküberlastungen. Überwacht die Round-Trip Time (RTT) und passt cwnd basierend auf den gemessenen Verzögerungen an. 
+
+b)

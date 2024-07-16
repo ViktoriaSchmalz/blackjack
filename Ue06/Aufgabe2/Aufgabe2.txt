@@ -1,0 +1,24 @@
+Aufgabe 2:
+
+Frage: Überlegen Sie sich, was sie tun müssen, damit diese Pakete (DHCP-Pakete) überhaupt gesendet/empfangen werden.
+
+Antwort:
+Um DHCP-Pakete zu senden oder zu empfangen, kann eine Unterbrechung und Wiederherstellung der Netzwerkverbindung initiiert werden. 
+Dies kannen mit Hilfe eines spezifisches Befehls in der Kommandozeile verursacht werden: "ipconfig /renew". Diese Methoden fordern eine neue IP-Adresse vom DHCP-Server an.
+
+
+Frage: Beschreiben Sie, was Sie anhand der angezeigten Informationen über das Protokoll sagen können.
+
+Antwort: Die Erklärung zu Bild:"Aufgabe2Bild2" in Wireshark ist wie folgt:
+
+- Frame 1: Der erste erfasste Frame in der aktuellen Sitzung.
+- 350 Bytes on wire (2800 bits): Die Gesamtgröße des Frames im Netzwerk.
+- 350 Bytes captured (2800 bits): Die tatsächlich von Wireshark erfasste und aufgezeichnete Framegröße.
+- Ethernet II: Der Frame verwendet das Ethernet II-Protokoll.
+- Dst: Broadcast (ff:ff:ff:ff:ff:ff): Die Ziel-MAC-Adresse ist eine Broadcast-Adresse.
+- Internet Protocol Version 4: Der Frame enthält ein IPv4-Paket.
+- Src: 0.0.0.0: Typische Quell-IP-Adresse in DHCP Discover-Nachrichten.
+- User Datagram Protocol: Der Frame verwendet das UDP-Protokoll.
+- Src Port: 68: Quellport, der von DHCP-Clients verwendet wird.
+- Dst Port: 67: Zielport, der von DHCP-Servern verwendet wird.
+- Dynamic Host Configuration Protocol (Discover): Der Frame enthält eine DHCP Discover-Nachricht, der erste Schritt im DHCP-Prozess.
