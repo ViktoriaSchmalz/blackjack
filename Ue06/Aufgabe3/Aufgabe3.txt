@@ -1,0 +1,38 @@
+Aufgabe 3:
+
+a) Wie viele Hosts befinden sich in ihrem lokalen Klasse-C-Netz? 
+Es muss der Befehl: "nmap -sn 192.168.1.0/24" verwendet werden. Resultat: 256 hosts
+
+b) Welches Betriebssystem wird von scanme.nmap.org verwendet? 
+Es muss der Befehl: "nmap -O scanme.nmap.org" verwendet werden. Resultat: "
+Host is up (0.13s latency).
+Not shown: 993 closed tcp ports (reset)
+PORT      STATE    SERVICE
+22/tcp    open     ssh
+80/tcp    open     http
+135/tcp   filtered msrpc
+139/tcp   filtered netbios-ssn
+445/tcp   filtered microsoft-ds
+9929/tcp  open     nping-echo
+31337/tcp open     Elite
+"
+
+c) An welchem Datum wurde die Webseite nmap.org registriert? 
+Es muss der Befehl: "whois nmap.org" verwendet werden.
+%
+
+d) Wie kann man möglichst effektiv eine größere Menge an Adressen nach offenen TCP-Ports scannen?
+Es muss der Befehl: "nmap -p- -T4 192.168.1.0/24" verwendet werden.
+ 
+e) Wie funktioniert der SYN-Scan und für was kann man ihn verwenden? 
+Es muss der Befehl: "nmap -sS 192.168.1.1" verwendet werden. -sS (SYN Scan): Sendet ein SYN-Paket an den Zielport. 
+Wenn der Port offen ist, antwortet der Server mit einem SYN-ACK-Paket. Nmap schließt die Verbindung dann sofort durch ein RST-Paket, wodurch der Scan unauffälliger und schneller wird.
+
+f) Welches sind die offenen Ports, die bei Ihren bisherigen Nmap-Scans am häufigsten auftreten, und wofür werden 
+sie verwendet?
+Es muss der Befehl: "nmap 192.168.1.1" verwendet werden. Resultat:"
+Nmap scan report for 192.168.1.1
+Host is up (0.032s latency).
+All 1000 scanned ports on 192.168.1.1 are in ignored states.
+Not shown: 1000 filtered tcp ports (no-response)
+"
